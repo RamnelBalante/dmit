@@ -1,0 +1,90 @@
+
+header > h1 {
+  font-size: 2.5rem;
+  color: purple;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+main {
+  /*background-color: #e6e6e9;*/
+  background-color: grey;
+  padding-bottom: 1rem;
+}
+h1, h2, h3 {
+  font-weight: bold;
+}
+h1 {
+  padding: 1rem;
+}
+h2 {
+  font-size: 1.875rem;
+  margin: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
+footer {
+  margin: 2rem;
+}
+main > section section {
+  background-color: white;
+  border:0.0625rem black solid;
+  margin: 1rem 1rem;
+  padding: 1rem;
+}
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 40rem) {
+  main > section section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main > section section div {
+    flex-basis: 56%;
+  }
+  img {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 64rem) {
+  main > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  main > section section {
+    display: block;
+    flex-basis: 29%;
+    margin: 0;
+  }
+  h2 {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 80rem) {
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  main > section {
+    padding: 1rem;
+  }
+  footer {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
